@@ -9,5 +9,15 @@ Kalau sudah selesai
 - git push origin namabranchlu
 
 
-5) kalau mau ngotak ngatik, bikin branch baru, caranya
-- git branch -b 'nama branchnya'
+**kalau mau ngotak ngatik, bikin branch baru, caranya
+- git checkout -b 'nama branchnya'
+**Cara tau lu di branch mana
+- git branch
+**cara pindah branch
+- git checkout namabranch
+
+
+
+1) Halo ini Fakhrul
+
+
