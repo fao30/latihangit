@@ -17,3 +17,4 @@ function nameFunction(array, parameter2) {
 console.log(nameFunction(array, 4));
 
 console.log("today code");
+console.log("yes code");
