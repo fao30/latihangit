@@ -10,8 +10,6 @@ expected output: [5, 1, 2, 3, 4]
 let array = [1, 2, 3, 4, 5];
 
 // answer
-
-let newArray = [];
 for(let i = 0; i < array.length-1; i++){
    array.push(array.shift());
     // console.log(array);
