@@ -14,16 +14,12 @@
 let arr = [1, 2, 3, 4, 5];
 let d = 6;
 
-const urutin = (arr, d) => {
-  for (let i = 0; i < d; i++) {
-    let pengurutan = arr[0];
-    arr.shift();
-    arr.push(pengurutan);
-  }
-  return arr;
-};
-
-console.log(urutin(arr, d));
+for (let i = 0; i < d; i++) {
+  let pengurutan = arr[0];
+  arr.shift();
+  arr.push(pengurutan);
+}
+console.log(arr);
 
 // 23451
 // 34512
