@@ -29,3 +29,5 @@ console.log(arr);
 // 23451
 
 console.log(test);
+
+console.log("naon sih");
