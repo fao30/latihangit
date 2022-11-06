@@ -27,3 +27,5 @@ console.log(arr);
 // 51234
 // 12345
 // 23451
+
+console.log(test);
