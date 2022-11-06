@@ -15,3 +15,5 @@ function nameFunction(array, parameter2) {
   return array;
 }
 console.log(nameFunction(array, 4));
+
+console.log("today code");
