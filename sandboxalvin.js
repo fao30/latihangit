@@ -51,10 +51,53 @@ const output = (param1) => {
   }
   return param1;
 };
-console.log(output(n1));
+// console.log(output(n1));
 
 for (let i = 0; i < n1; i = i + 2) {
   if (i % 2 === 0) {
   }
   // console.log(i);
 }
+
+let arr = [43, "what", 9, true, "cannot", false, "be", 3, true];
+// Example output:
+// true 3.5  be  false cannot  true 9 what 43 OR each item on a new line
+let newArray = [];
+const reverse = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    arr.reverse();
+  }
+  return arr;
+};
+// console.log(reverse(arr));
+
+for (let i = 0; i < arr.length; i++) {
+  arr.reverse();
+}
+// console.log(arr);
+
+let arr_3 = [4, 6, 7];
+let arr_4 = [8, 1, 9];
+// Example output:
+// [12, 7, 16]
+let num = [];
+for (let i = 0; i < arr_3.length; i++) {
+  num.push(arr_3[i] + arr_4[i]);
+}
+// console.log(num);
+
+let n2 = 4; //  4 * 3 * 2 * 1 = 24
+// Example output:
+// 24
+// for (let i = 0; i < n2.length; i++) {
+//   n2[i] **;
+// }
+// console.log(n2);
+
+const countries = ["columbia", "indonesia", "russia", "amerika"];
+const [a, b, c, d] = countries;
+console.log(a, b, c, d);
+
+//spread array values
+const [m, ...y] = countries;
+console.log(m, y);
