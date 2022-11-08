@@ -101,3 +101,35 @@ console.log(a, b, c, d);
 //spread array values
 const [m, ...y] = countries;
 console.log(m, y);
+
+for (let i = 0; i < 6; i++) {
+  let str = "";
+  for (let j = 0; j < 6; j++) {
+    str += "*";
+  }
+  // console.log(str);
+}
+
+for (let i = 0; i < 6; i++) {
+  let str = "";
+  for (let j = 0; j < i; j++) {
+    str += "*";
+  }
+  // console.log(str);
+}
+
+for (let i = 0; i <= 6; i++) {
+  let str = "";
+  for (let j = 0; j <= i; j++) {
+    if (i === 6) {
+      str += "*";
+    } else {
+      if (j === 0 || j === i) {
+        str += "*";
+      } else {
+        str += " ";
+      }
+    }
+  }
+  console.log(str);
+}
