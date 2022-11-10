@@ -11,15 +11,15 @@
 
 // 5, 1, 2, 3, 4
 
-let arr = [1, 2, 3, 4, 5];
-let d = 6;
+// let arr = [1, 2, 3, 4, 5];
+// let d = 6;
 
-for (let i = 0; i < d; i++) {
-  let pengurutan = arr[0];
-  arr.shift();
-  arr.push(pengurutan);
-}
-console.log(arr);
+// for (let i = 0; i < d; i++) {
+//   let pengurutan = arr[0];
+//   arr.shift();
+//   arr.push(pengurutan);
+// }
+// console.log(arr);
 
 // 23451
 // 34512
@@ -28,7 +28,7 @@ console.log(arr);
 // 12345
 // 23451
 
-console.log(test);
+// console.log("test");
 
-console.log("naon sih");
-sadas;
+// console.log("naon sih");
+// console.log("test")
