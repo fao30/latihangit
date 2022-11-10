@@ -96,11 +96,11 @@ let n2 = 4; //  4 * 3 * 2 * 1 = 24
 
 const countries = ["columbia", "indonesia", "russia", "amerika"];
 const [a, b, c, d] = countries;
-console.log(a, b, c, d);
+// console.log(a, b, c, d);
 
 //spread array values
 const [m, ...y] = countries;
-console.log(m, y);
+// console.log(m, y);
 
 for (let i = 0; i < 6; i++) {
   let str = "";
@@ -130,6 +130,49 @@ for (let i = 0; i <= 6; i++) {
         str += " ";
       }
     }
+  }
+  // console.log(str);
+}
+
+let str1 = "javascript";
+// Example output:
+// jZvZsZrZpZ OR each letter on a new line
+//using built n function
+for (let i = 1; i < str1.length; i += 2) {
+  str1 = str1.split("");
+  str1[i] = "Z";
+  str1 = str1.join("");
+}
+// console.log(str1);
+
+//concat
+const array1 = ["jhons", "take", "a", "shower"];
+const array2 = ["in", "manila"];
+let arrayTamp = [];
+for (let i = 0; i < array1.length; i++) {
+  arrayTamp = array1.concat(array2);
+}
+// console.log(arrayTamp);
+
+// christmast tree
+for (let i = 0; i <= 7; i++) {
+  let str = "";
+  for (let j = 0; j <= 7 - i; j++) {
+    str += " ";
+  }
+  for (let x = 0; x < 2 * i - 1; x++) {
+    str += "*";
+  }
+  // console.log(str);
+}
+
+for (let i = 0; i < 7; i++) {
+  let str = "";
+  for (let j = 0; j < i; j++) {
+    str += " ";
+  }
+  for (let x = 0; x < 2 * (7 - i) - 1; x++) {
+    str += "*";
   }
   console.log(str);
 }
