@@ -3833,6 +3833,84 @@ Our solution is written as a function expression and uses string interpolation, 
 
 // console.log(newRobot);
 
-// const memek =
-//   "dasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsadsadasdsadasdasdsss";
-// console.log(memek.length);
+// const menu = {
+//   _meal: "",
+//   _price: 0,
+//   set meal(mealToCheck) {
+//     if (typeof mealToCheck === "string") {
+//       return (this._meal = mealToCheck);
+//     }
+//   },
+
+//   set price(priceToCheck) {
+//     if (typeof priceToCheck === "number") {
+//       return (this._price = priceToCheck);
+//     }
+//   },
+
+//   get todaySpecial() {
+//     if (this._meal && this._price) {
+//       return `Today's meal is ${this._meal} for ${this._price}!`;
+//     } else {
+//       return `Meal or price not set correctly`;
+//     }
+//   },
+// };
+
+// menu.meal = "Indomie";
+// menu.price = 1900;
+// console.log(menu.todaySpecial);
+
+// const team = {
+//   _players: [
+//     {
+//       firstName: "Ryan",
+//       lastName: "Pratama",
+//       age: 22,
+//     },
+//     {
+//       firstName: "Chainsaw",
+//       lastName: "Man",
+//       age: 18,
+//     },
+//     {
+//       firstName: "Hayakawa",
+//       lastName: "Aki",
+//       age: 17,
+//     },
+//   ],
+
+//   _games: [
+//     { opponent: "Power", teamPoints: 55, opponentPoints: 60 },
+//     { opponent: "Makima", teamPoints: 50, opponentPoints: 45 },
+//     { opponent: "Pochita", teamPoints: 70, opponentPoints: 75 },
+//   ],
+//   get players() {
+//     return this._players;
+//   },
+//   get games() {
+//     return this._games;
+//   },
+//   addPlayer(newFirstName, newLastName, newAge) {
+//     let player = {
+//       firstName: newFirstName,
+//       lastName: newLastName,
+//       age: newAge,
+//     };
+//     this.players.push(player);
+//   },
+//   addGame(newOpponent, newTeamPoints, newOpponentPoints) {
+//     let game = {
+//       opponent: newOpponent,
+//       teamPoints: newTeamPoints,
+//       opponentPoints: newOpponentPoints,
+//     };
+//     this.games.push(game);
+//   },
+// };
+
+// team.addPlayer("Bugs", "Bunny", 76);
+// console.log(team.players);
+
+// team.addGame("Eren", 100, 90);
+// console.log(team.games);
