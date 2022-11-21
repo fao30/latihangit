@@ -4051,3 +4051,170 @@ Our solution is written as a function expression and uses string interpolation, 
 // });
 
 // console.log(longFavoriteWords);
+
+// const animals = [
+//   "hippo",
+//   "tiger",
+//   "lion",
+//   "seal",
+//   "cheetah",
+//   "monkey",
+//   "salamander",
+//   "elephant",
+// ];
+
+// // const foundAnimal = animals.findIndex(animal => {
+// //   return animal === 'elephant'
+// // })
+
+// // console.log(foundAnimal)
+
+// const startsWithS = animals.findIndex((animal) => {
+//   if (animal[0] === "s") {
+//     return animal;
+//   }
+// });
+
+// // const startsWithS = animals.findIndex(animal => {
+// //     return animal[0] === 's' ? true : false;
+// //   });
+
+// console.log(startsWithS);
+
+// const newNumbers = [1, 3, 5, 7];
+
+// const newSum = newNumbers.reduce((accumulator, currentValue) => {
+//   console.log(`The value of accumulator: ${accumulator}`);
+//   console.log(`The value of currentValue: ${currentValue}`);
+//   return accumulator + currentValue;
+// }, 10);
+
+// console.log(newSum);
+
+// .some() returns boolean
+// .filter() creates a shallow copy of a portion of a given array
+// .every() returns boolean
+// const words = ["unique", "uncanny", "pique", "oxymoron", "guise"];
+
+// console.log(
+//   words.some((word) => {
+//     return word.length < 6; // checks whether an word.length is greater than 6
+//   })
+// );
+
+// // Use filter to create a new array
+// console.log(
+//   (interestingWords = words.filter((word) => {
+//     return word.length > 5;
+//   }))
+// );
+
+// // Make sure to uncomment the code below and fix the incorrect code before running it
+// console.log(
+//   interestingWords.every((word) => {
+//     return word.length > 5;
+//   })
+// );
+
+// const cities = [
+//   "Orlando",
+//   "Dubai",
+//   "Edinburgh",
+//   "Chennai",
+//   "Accra",
+//   "Denver",
+//   "Eskisehir",
+//   "Medellin",
+//   "Yokohama",
+// ];
+
+// const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+// //  Choose a method that will return undefined
+// cities.forEach((city) => console.log("Have you visited " + city + "?"));
+
+// const cities = [
+//   "Orlando",
+//   "Dubai",
+//   "Edinburgh",
+//   "Chennai",
+//   "Accra",
+//   "Denver",
+//   "Eskisehir",
+//   "Medellin",
+//   "Yokohama",
+// ];
+
+// const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+// //  Choose a method that will return undefined
+// cities.forEach((city) => console.log("Have you visited " + city + "?"));
+
+// // Choose a method that will return a new array
+// const longCities = cities.filter((city) => city.length > 8);
+// console.log(longCities);
+
+// // Choose a method that will return a single value
+// const word = cities.reduce((acc, currVal) => {
+//   return acc + currVal[0];
+// }, "C");
+// console.log(word);
+
+// // Choose a method that will return a new array
+// const smallerNums = nums.map((num) => num - 5);
+// console.log(smallerNums);
+
+// // Choose a method that will return a boolean value
+// console.log(nums.every((num) => num < 0));
+// // OR nums.some(num => num < 0);
+
+// const randomNums = [1, 123, 25, 90, 3543, 42];
+
+// const foundElement = randomNums.findIndex((num) => num > 200);
+// console.log(foundElement); // output: 4 aka randomNums[4] === 3543, which > 200
+
+// let story =
+//   'Last weekend, I took literally the most beautifull bike ride of my life. The route is called "The 9W to Nyack" and it stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure from beginning to end! It is a 48 mile loop and it literally took me an entire day. I stopped at Riverbank State Park to take some artsy photos. It was a short stop, though, because I had a freaking long way to go. After a quick photo op at the very popular Little Red Lighthouse I began my trek across the George Washington Bridge into New Jersey. The GW is a stunning 4,760 feet long! I was already very tired by the time I got to the other side. An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautifull park along the coast of the Hudson. Something that was very surprising to me was that near the end of the route you literally cross back into New York! At this point, you are very close to the end.';
+
+// let storyWords = story.split(" ");
+// let unnecessaryWord = "literally";
+// let misspelledWord = "beautifull";
+// let badWord = "freaking";
+// let count = 0;
+// storyWords.forEach(() => {
+//   count++;
+// });
+
+// console.log(count);
+
+// storyWords = storyWords.filter((word) => {
+//   return word !== unnecessaryWord; // removes all "literally" words
+// });
+
+// storyWords = storyWords.map((word) => {
+//   if (word === misspelledWord) {
+//     return "beautiful"; // renames "beautifull" to "beautiful"
+//   } else {
+//     return word;
+//   }
+// });
+
+// let badWordIndex = storyWords.findIndex((word) => {
+//   return word === badWord;
+// });
+// console.log(badWordIndex); // storyWords[78] === badWord
+
+// storyWords[78] = "really"; // changes "freaking" to "really"
+
+// let lengthCheck = storyWords.every((word) => {
+//   return word.length < 10; // checks whether all words.length less than 10
+// }); // output: false
+
+// storyWords.forEach((word) => {
+//   if (word.length > 10) {
+//     // checks if there's a word that has more than 10 characters
+//     console.log(word);
+//   }
+// });
+
+// console.log(storyWords.join(" "));
